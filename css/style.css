@@ -1,0 +1,16 @@
+@import url("https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap");
+.navbarColors {
+  font-family: "Indie Flower", cursive;
+  color: #415f56;
+  font-size: small;
+  background-color: #dddcdb; }
+
+.mainColors {
+  font-family: "Indie Flower", cursive;
+  color: #dddcdb;
+  background-color: #233237;
+  font-size: medium; }
+
+.bodySize {
+  width: 100vw;
+  height: 80vh; }

@@ -1,0 +1,16 @@
+//@mixin fontColorsMenu --> font family y color de las letras del menu, suma un fontsize small, suma un bacground-color
+//@include fontColorsMenu
+@mixin fontColorsMenu($font,$color,$bgColors){
+    font-family: $font;
+    color: $color;
+    font-size: small;
+    background-color: $bgColors;
+}
+//@mixin fontColorsBody --> font family y color de las letras del body, suma un fontsize medium, suma un background-color
+//@include fontColorsBody
+@mixin fontColorsBody($font,$color,$bgColors) {
+    font-family: $font;
+    color: $color;
+    background-color: $bgColors;
+    font-size: medium;
+}

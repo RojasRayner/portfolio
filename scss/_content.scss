@@ -1,0 +1,10 @@
+.navbarColors{
+    @include fontColorsMenu($font,$colorDos,$ColorSeis);
+}
+.mainColors{
+    @include fontColorsBody($font,$ColorSeis,$colorUno);
+}
+.bodySize{
+    width: 100vw;
+    height: 80vh;
+}
