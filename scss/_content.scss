@@ -46,7 +46,7 @@ header{
 .roraima{
     position: absolute;
     width: 1900px;
-    bottom: -40px;
+    bottom: 20px;
     right: 0;
     z-index: 17;
 }
@@ -56,21 +56,6 @@ header{
     height: 1500px;
     top: 0;
     right: 0;
-}
-.redes{
-    position: absolute;
-    z-index: 70;
-    display: flex;
-    justify-content: end;
-    align-items: flex-end;
-    width: 100vw;
-    height: 100vh;
-    padding-right: 2rem;
-    padding-bottom: 200px;
-}
-.bi-linkedin{
-    width: 25px;
-    height: 25px;
 }
 //nav
 nav{
@@ -90,7 +75,7 @@ nav.container{
 .titulo{
     position: absolute;
     z-index: 30;
-    line-height: 0.5rem;
+    line-height: 0.8rem;
     top: 20%;
     width: 100vw;
     padding-left: 2rem;
@@ -98,9 +83,6 @@ nav.container{
     font-weight: 900;
     color: $colorUno;
     text-transform: uppercase;
-}
-#unique{
-    font-weight: 900;
 }
 //main
 .sombra{
@@ -119,7 +101,6 @@ nav.container{
     width: 100vw;
     position: relative;
 }
-
 .contenedor{
     padding: 3rem;
     display: grid;
@@ -130,6 +111,7 @@ nav.container{
 }
 .contenido{
     transform: translateY(-50px);
+    justify-self: end;
 }
 .contenedor img{
     width: 100%;
@@ -160,4 +142,78 @@ div.contenedor > *{
 }
 span{
     font-weight: 400;
+}
+.animate{
+    position: relative;
+    line-height: 1.5rem;
+    display: flex;
+    overflow: hidden;
+    height: 25px;
+}
+.animacion{
+    animation: animatte 10s linear infinite;
+    position: relative;
+    color: $colorDos;
+    & span{
+        display: block;
+        height: 100%;
+        line-height: 1.5rem;
+        color: $colorOcho;
+    }
+}
+@keyframes animatte {
+    10%{transform: translateY(-122%);}
+    25%{transform: translateY(-100%);}
+    35%{transform: translateY(-222%);}
+    50%{transform: translateY(-200%);}
+    60%{transform: translateY(-322%);}
+    75%{transform: translateY(-300%);}
+    85%{transform: translateY(-422%);}
+    100%{transform: translateY(-400%);}
+}
+.navbar-toggler{
+    border-color: transparent;
+    box-shadow: none;
+    &:active{
+        border-color: transparent;
+        box-shadow: none;
+    }
+    &:after{
+        border-color: transparent;
+        box-shadow: none;
+    }
+    &:before{
+        border-color: transparent;
+        box-shadow: none;
+    }
+    &:focus{
+        border-color: transparent;
+        box-shadow: none;
+    }
+    
+}
+//footer
+.redes{
+    position: absolute;
+    width: 100vw;
+    height: 20vh;
+    background-color: $colorUno;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+a svg.bi-linkedin, a svg.bi-envelope{
+    width: 45px;
+    height: 45px;
+    color: $colorSiete;
+}
+.linkedin{
+    width: 20vw;
+    margin-right: 10vw;
+    display:flex;
+    justify-content: end;
+}
+.mail{
+    width: 20vw;
+    margin-left: 10vw;
 }
